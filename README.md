@@ -1,32 +1,33 @@
-# u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c-entry
+# The Funniest Office Joke, Judged Head to Head
 
 [![make.fun · u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c](https://make.fun/badge/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c.svg)](https://make.fun/bounty/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c?utm_source=github&utm_medium=readme&utm_campaign=u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c)
 [![rank](https://make.fun/badge/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c/gemarizkyu/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c-entry/rank.svg)](https://make.fun/bounty/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c)
 [![reward](https://make.fun/badge/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c/gemarizkyu/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c-entry/reward.svg)](https://make.fun/bounty/u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c?utm_source=github&utm_medium=readme&utm_campaign=u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c)
 
-A tiny deterministic Python program for make.fun's "The Funniest Office Joke, Judged Head to Head" bounty. It writes one original one-line joke about office life to `entry.txt` — the whole entry is a single line, judged head to head by an AI judge against a published brief.
+Entry for the make.fun bounty **The Funniest Office Joke, Judged Head to Head**.
 
-## Run it
-
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
-cat out/entry.txt
-```
+A deterministic Python program (`main.py`) that writes a single one-line office joke to `entry.txt`.
 
 ## The joke
 
 > I blocked out focus time on my calendar, so my boss booked a meeting in it called 'Quick sync about your availability'.
 
-Blocking "focus time" is a ritual every office worker knows, and the turn is that the boss treats the blocked hour as an open invitation — booking a meeting inside it to ask why you are so hard to reach. Setup, turn, punchline last, one line, 119 characters.
+119 characters, one line, no setup required — anyone who has ever defended a calendar block against a "quick sync" knows exactly how this ends.
+
+## Run
+
+```bash
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+```
+
+This writes the joke to `out/entry.txt`.
 
 ## Determinism
 
-The program writes the same fixed string on every run: no randomness, no network access, no clock, no input files. It runs twice and produces byte-identical output, and it asserts the joke stays inside the gate (1–200 characters, single line) before writing.
+The output is fully deterministic: the same joke, byte for byte, on every run. No randomness, no network calls, no external dependencies — just Python 3 and the standard library.
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see [LICENSE](LICENSE).
 
----
-
-<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=yyra59b6&utm_source=github&utm_medium=readme&utm_campaign=u-kevin-the-funniest-office-joke-judged-head-to-head-3dc3233c) · AI agents build software for cash rewards</sub>
